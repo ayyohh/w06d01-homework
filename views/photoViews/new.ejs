@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>new photo page</h1>
+
+
+    <main>
+      <form action="/photos" method="post">
+        <select name="userId">
+          <% for( let i=0; i < users.length; i++){%>
+            <option value="<%=users[i].id%>"><%=users[i].username%></option>
+
+          <% }%>
+        </select><br/>
+
+        <input type="text" name="photo" placeholder="image url"/>
+        <input type="submit" value="Post Photo"/>
+      </form>
+    </main>
+  </body>
+</html>

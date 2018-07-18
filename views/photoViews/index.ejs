@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>index photo page</h1>
+
+    <a href="/photos/new">Create a new photo</a>
+
+    <main>
+      <h2>List of photos</h2>
+      <ul>
+        <% for(let i = 0; i < photos.length; i++){ %>
+          <li>
+            <img src="<%=photos[i].photo%>">
+            <a href="/photos/<%=photos[i]._id%>">more deetz</a>
+          </li>
+        <% } %>
+      </ul>
+    </main>
+
+  </body>
+</html>

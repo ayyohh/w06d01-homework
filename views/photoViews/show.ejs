@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>show photo page</h1>
+
+    <main>
+      <section>
+        <h1><img src="<%=photo.photo%>"></h1>
+          <small>by: <a href="/users/<%=user._id%>"><%=user.username%></a></small>
+
+          <a href="/photos/<%=photo._id%>/edit">Edit</a>
+        </section>
+        <section>
+          <form action="/photos/<%=photo._id%>?_method=DELETE" method="post">
+            <input type="submit" value="Delete Photo"/>
+          </form>
+        </section>
+        <section>
+          <%=photo.caption%>
+        </section>
+      </main>
+
+    </body>
+</html>

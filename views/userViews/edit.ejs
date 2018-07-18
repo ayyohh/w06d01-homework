@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>edit user page</h1>
+
+    <form action="/users/<%= user.id%>?_method=PUT" method="POST">
+      Username: <input type="input" name="username" placeholder="<%= user.username %>">
+      Password: <input type="input" name="password" placeholder="<%= user.password %>">
+      <input type="submit">
+    </form>
+    <a href="/users">Go back</a>
+
+  </body>
+</html>

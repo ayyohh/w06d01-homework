@@ -1,0 +1,27 @@
+{
+  "name": "w06d01-homework",
+  "version": "1.0.0",
+  "description": "--- Title: Photo Site  Type: Homework  Competencies: Full CRUD in Express with Mongoose - 2 Model  Website credit goes to Kaylie Weable: https://picblog.herokuapp.com ---",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayyohh/w06d01-homework.git"
+  },
+  "author": "al",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayyohh/w06d01-homework/issues"
+  },
+  "homepage": "https://github.com/ayyohh/w06d01-homework#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.2.4"
+  }
+}
